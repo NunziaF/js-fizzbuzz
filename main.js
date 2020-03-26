@@ -20,11 +20,11 @@ for (var i = 1; i<=100; i++){
         }
         //Se è divisibile per 5 sostituiscilo con Buzz
         if (i % 5 === 0){
-          console.log("Buzz")
+          console.log("Buzz");
         }
       }
 
   } else{
     console.log(i);
-  }
+    }
 }
