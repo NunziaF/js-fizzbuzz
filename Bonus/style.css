@@ -1,0 +1,32 @@
+div{
+  padding: 25px;
+  border: solid 1px white;
+  display: flex;
+  flex-wrap:wrap;
+  height: 30px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+#lista{
+  background-color: black;
+  height: 700px;
+  width: 100vw;
+}
+
+.class_i{
+  color: white;
+}
+
+.class_fizz{
+  color: orange;
+}
+
+.class_buzz{
+  color: red;
+}
+
+.class_fizzbuzz{
+  color: violet;
+}

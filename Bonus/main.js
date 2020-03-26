@@ -4,21 +4,24 @@
 // Per i numeri che sono sia multipli di 3 che di 5 stampi” FizzBuzz”.
 
 
-var lista;
+var valoreDaStampare;
+var numPrecedente;
 
-for (var i = 1; i<=100; i++){
+for (var i = 1; i<=100; i++) {
 
-  lista = i;
+  valoreDaStampare = "<div class=class_i>" + i + "</div>";
 
-  if(i % 3 === 0){
-    lista = "Fizz"
+  if (i % 3 === 0) {
+    valoreDaStampare = " <div class='class_fizz'> Fizz </div>";
   }
-  if (i % 5 === 0){
-    lista = "Buzz"
+  if (i % 5 === 0) {
+    valoreDaStampare = "<div class='class_buzz'> Buzz </div>";
   }
-  if ((i % 3 === 0) && (i % 5 === 0)){
-    lista = "FizzBuzz"
+  if ((i % 3 === 0) && (i % 5 === 0)) {
+    valoreDaStampare = "<div class='class_fizzbuzz'> FizzBuzz </div>";
   }
+  console.log(valoreDaStampare);
 
-  console.log(lista);
+  numPrecedente = document.getElementById('lista').innerHTML;
+  document.getElementById("lista").innerHTML = numPrecedente + valoreDaStampare;
 }
